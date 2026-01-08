@@ -1,12 +1,10 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
 import scrapy
 
 
-class ComparateurItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+import scrapy
+
+class ProductItem(scrapy.Item):
+    title = scrapy.Field() # ou 'name' selon ce que tu choisis
+    price = scrapy.Field()
+    url = scrapy.Field()
+    source = scrapy.Field()
